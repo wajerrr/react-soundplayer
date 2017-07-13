@@ -13,9 +13,8 @@
     border: 0;
     outline: none;
     cursor: pointer;
-    transition: box-shadow, .05s ease, -webkit-transform;
-    transition: transform, box-shadow, .05s ease;
-    transition: transform, box-shadow, .05s ease, -webkit-transform;
+    -webkit-transition: -webkit-transform, box-shadow, .05s ease;
+            transition: transform, box-shadow, .05s ease;
     box-sizing: border-box;
     -webkit-appearance: none;
 }
