@@ -21,6 +21,7 @@ class SoundPlayerContainer extends Component {
         // if there is no `window`
         if ('undefined' !== typeof window) {
             this.soundCloudAudio = new SoundCloudAudio(props.clientId);
+            this.soundCloudAudio.audio.autoplay = true;
         }
 
         this.state = {
