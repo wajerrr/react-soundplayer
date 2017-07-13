@@ -9,7 +9,7 @@
   "scripts": {
     "build-js": "rm -rf ./lib && babel src -d lib --stage 0",
     "build-css": "rm -rf ./styles && mkdir styles && node .cssnext",
-    "build": "npm run build-js && npm run build-css",
+    "build": "npm run build-js",
     "prepublish": "npm run build"
   },
   "keywords": [

@@ -54,6 +54,11 @@ class SoundPlayerContainer extends Component {
         soundCloudAudio.on('seeked', this.onSeekedTrack.bind(this));
         soundCloudAudio.on('pause', this.onAudioPaused.bind(this));
         soundCloudAudio.on('ended', this.onAudioEnded.bind(this));
+        soundCloudAudio.on('canplay', this.onCanPlay.bind(this));
+    }
+
+    onCanPlay() {
+      this.soundCloudAudio.play();
     }
 
     componentWillReceiveProps(nextProps) {
