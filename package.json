@@ -16,7 +16,8 @@
     "build": "npm run build-js && npm run build-css",
     "lint": "eslint ./src --fix",
     "prepublish": "npm run build",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "react",
